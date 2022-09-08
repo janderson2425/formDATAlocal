@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bun's Bakery Feedback Form</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <link href="/styles.css" type="text/css" rel="stylesheet"/>
     
   </head>
   <body>
   
   <div class="container">
+    <div class="col-sm-6">
     <h2>Let Us Know!</h2>
-
-    <!--for 'action #'' make sure you adjust if needed-->
+    <!--for 'action #'' make sure you adjust if needed TO 'POST GET PUT OR DELETE'-->
     <form action="#">
       <div class="form-group">
         <label for="text">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+        <input type="text" class="form-control" id="name" placeholder="Enter full name" name="name">
       </div>
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <!--inserted 'pattern' below to get prompt for invalid email'-->
+        <input type="email" 
+               class="form-control" 
+               id="email" 
+               placeholder="example@gmail.com" 
+               name="email" 
+               pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+
+        
       </div>
       <div class="form-group">
         <label for="text">What would you like us to know?</label>
@@ -35,6 +42,20 @@
       
       <button type="button" onclick="saveData()" id="save_btn" class="btn btn-default">Submit</button>
     </form>
+
+  </div>
+  <div class="col-sm-6">
+     <h2>Customer Feedback</h2>
+     <div class="row">
+      <div class="col-sm-4" style="background-color:rgb(222, 216, 52);padding: 10px;">Customer</div>
+      <div class="col-sm-4" style="background-color:rgb(224, 111, 111);padding: 10px;">Email</div>
+      <div class="col-sm-4" style="background-color:rgb(51, 195, 243);padding: 10px;">Message</div>
+     
+     </div>  
+     <div id="showCustomers"></div> 
+     
+
+  </div>
   </div>
   
   <script src="script.js"></script>
