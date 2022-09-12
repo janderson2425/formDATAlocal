@@ -1,16 +1,49 @@
-body {
-    background-image: url("citrus.png");
-    margin:inherit;
-    padding:260px;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(90, 228, 221);
+    font-family: 'Monoton', cursive;
     
 }
 
-.container {
+
+.logo {
+    color: rgb(229, 30, 8);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: flex;
+   
+}
+
+
+
+
+body {
+    background-image: url("citrus.png");
+    margin:none;
+    padding:none;
+    
+}
+
+
+
+div.container {
     background-color: rgb(253, 255, 240);
     opacity: 0.9;
     margin: auto;
     padding: 30px;
     border: 30px;
+    display: inline-flexbox;
    
     
     
@@ -52,6 +85,7 @@ button#save_btn.btn.btn-default:hover {
     padding: 20px;
     margin: 0px;
 
+
    
 }
 
@@ -59,3 +93,105 @@ button#save_btn.btn.btn-default:hover {
  h2 {
     text-align: center;
 }
+
+h4 {
+    font-size: 40px;
+    font-weight:bold;
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(107, 155, 221);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 35px;
+    height: 3px;
+    background-color: rgb(107, 155, 221);
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav-links{
+       width: 50%;
+   }
+}
+
+
+@media screen and (max-width:768px) {
+   body{
+    overflow-x: hidden;
+   }
+    
+   .nav-links{
+    position: absolute;
+     right: 0px;
+     height: 92vh;
+     top: 8vh;
+     background-color: rgb(90, 228, 221);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 30%;
+     transform: translateX(100%);
+     transition: transform 0.5s ease-in;
+   }
+   .nav-links li{
+    opacity: 0;
+   }
+   .burger{
+    display: block;
+    cursor: pointer;
+   }
+}
+
+.nav-active{
+    transform: translate(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+       opacity: 0;
+       transform: translateX(50px);
+    }
+
+    to{
+       opacity: 1;
+       transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,12px);
+}
+
+.toggle .line2{
+  opacity: 0;  
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-12px);
+}
+
+
