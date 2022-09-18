@@ -5,6 +5,34 @@
    
 }
 
+
+body {
+    background-image: url("citrus.png");
+    margin:none;
+    padding:none;
+    
+}
+
+
+
+
+.container {
+    background-color: rgb(253, 255, 240);
+    opacity: 0.9;
+    
+    margin-top: 130px;
+    margin-bottom: 70px;
+       
+    padding: 30px;
+    border: 30px;
+    display: inline-flexbox;
+    z-index: 1;
+
+
+    
+    
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -12,8 +40,20 @@ nav{
     min-height: 8vh;
     background-color: rgb(90, 228, 221);
     font-family: 'Monoton', cursive;
+    position: relative;
+    z-index: 1;
     
 }
+
+.col-sm-6 {
+    min-width: 450px;
+    max-width: 650px;
+    padding: 20px;
+    border: 10px;
+    margin: 0px; 
+    display:contents;
+}
+
 
 
 .logo {
@@ -28,34 +68,13 @@ nav{
 
 
 
-body {
-    background-image: url("citrus.png");
-    margin:none;
-    padding:none;
-    
-}
-
-
-
-div.container {
-    background-color: rgb(253, 255, 240);
-    opacity: 0.9;
-    margin: auto;
-    padding: 30px;
-    border: 30px;
-    display: inline-flexbox;
-   
-    
-    
-}
-
 .row {
     text-align: center;
     font-size: large;
     border-radius: 5px;
     background: #aad56d;
     padding: 20px;
-
+    border-style:outset;
     
 }
 
@@ -79,18 +98,10 @@ button#save_btn.btn.btn-default:hover {
  background-color: rgb(236, 165, 132);
 }
 
-.col-sm-6 {
-    min-width: 450px;
-    max-width: 650px;
-    padding: 20px;
-    margin: 0px;
 
 
-   
-}
 
-
- h2 {
+h2 {
     text-align: center;
 }
 
@@ -100,15 +111,22 @@ h4 {
 }
 
 
+
 .nav-links{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
+ 
+   
     
 }
 
+
+
 .nav-links li{
     list-style: none;
+
+    
 }
 
 .nav-links a{
@@ -117,6 +135,8 @@ h4 {
     letter-spacing: 2px;
     font-weight:bold;
     font-size: 14px;
+    
+    
 }
 
 .burger{
@@ -158,8 +178,9 @@ h4 {
      transition: transform 0.5s ease-in;
    }
    .nav-links li{
-    opacity: 0;
+    opacity: 0.9;
    }
+
    .burger{
     display: block;
     cursor: pointer;
