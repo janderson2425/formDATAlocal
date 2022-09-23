@@ -13,6 +13,7 @@ message=document.getElementById("message").value;
 
 
 
+
 //I don't want my txt file to have duplicate entries so include array to prevent
 //block scope #2 variable added below as an array
 //https://www.geeksforgeeks.org/how-to-convert-json-string-to-array-of-json-objects-using-javascript/
