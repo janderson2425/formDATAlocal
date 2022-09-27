@@ -56,6 +56,12 @@ nav{
 
 
 
+.col-sm-4 {
+    overflow-wrap: break-word;
+}
+
+
+
 .logo {
     color: rgb(229, 30, 8);
     text-transform: uppercase;
@@ -235,6 +241,7 @@ h4 {
     padding:2%;
     margin: auto;
     display: flex;
+    
   
     
 }

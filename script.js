@@ -23,7 +23,17 @@ if(client_responses.some((v)=>{return v.email==email}))
 
 {
     alert("duplicate data");
+    
 }
+
+if(client_responses.some((v)=>{return v.email==email}))
+
+{
+    alert("You have entered an invalid email!");
+    
+}
+
+
 else
 {
     client_responses.push({
@@ -117,8 +127,10 @@ const myChart = new Chart(doughnut, {
     options: {
         title: {
           display: true,
-          text:'Customer Favorite'
-            
+          text:'Customer Favorite',
+            fontColor: 'rgba(51, 133, 221)',
+            fontSize:40,
+            fontFamily: 'sans-serif '
         }
     }
 });
