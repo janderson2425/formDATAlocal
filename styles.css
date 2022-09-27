@@ -216,3 +216,33 @@ h4 {
 }
 
 
+.page2 {
+    background-color: #aad56d;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    max-width:auto;
+    min-width: auto;
+   
+
+}
+
+
+
+  
+#myChart{
+    padding:2%;
+    margin: auto;
+    display: flex;
+  
+    
+}
+
+
+
+
+
+
+
+

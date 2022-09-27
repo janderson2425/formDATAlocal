@@ -90,3 +90,42 @@ burger.classList.toggle('toggle');
 navSlide();
 
 
+
+const doughnut = document.getElementById('myChart');
+const myChart = new Chart(doughnut, {
+    type: 'doughnut',
+    data: {
+        labels: ['Chicken', 'Beef', 'Pork'],
+        datasets: [{
+            
+            data: [10, 20, 30],
+            backgroundColor: [
+                'rgba(245, 40, 145, 0.8)',
+                'rgba(67, 182, 182, 0.8)',
+                'rgba(255, 144, 54, 0.85)',
+                
+            ],
+            borderColor: [
+                'rgba()',
+                'rgba(18, 11, 5, 0.55)',
+                'rgba(18, 11, 5, 0.55)',
+                
+            ],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        title: {
+          display: true,
+          text:'Customer Favorite'
+            
+        }
+    }
+});
+
+
+
+
+
+
+
