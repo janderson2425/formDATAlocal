@@ -235,7 +235,7 @@ h4 {
 }
 
 
-@media (min-width: 600px) and (max-width: 1200px) {
+@media screen and (min-width: 675px) and (max-width: 1155px) {
     #mychart{
         display: flex;
     }
