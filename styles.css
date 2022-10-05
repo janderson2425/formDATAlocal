@@ -235,11 +235,12 @@ h4 {
 }
 
 
-@media screen and (max-width: 1155px) {
+@media screen and (min-width: 768px) {
     .canvas {
     padding:2%;
     margin: auto;
     display: flex;
+    justify-content: center;
     }
 }
   
