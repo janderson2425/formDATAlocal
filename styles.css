@@ -235,16 +235,18 @@ h4 {
 }
 
 
-
+.page2 {
+    @media (min-width: 600px) and (max-width: 1200px);
   
 #myChart{
     padding:2%;
     margin: auto;
     display: flex;
     
-  
-    
 }
+
+
+
 
 
 
