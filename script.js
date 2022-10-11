@@ -17,10 +17,14 @@ message=document.getElementById("message").value;
 //I don't want my txt file to have duplicate entries so include array to prevent
 //block scope #2 variable added below as an array
 //https://www.geeksforgeeks.org/how-to-convert-json-string-to-array-of-json-objects-using-javascript/
+
+
+//feature #1
 let client_responses= Array();
 client_responses=JSON.parse(localStorage.getItem("clients"))?JSON.parse(localStorage.getItem("clients")):[]
 if(client_responses.some((v)=>{return v.email==email}))
 
+//Feature #4 are below with the 2 alerts
 {
     alert("duplicate data");
     
@@ -52,6 +56,8 @@ function showData()
 {
     //added below line to only allow a new line to be added instead of resending entire batch and then the new message
     document.getElementById("showCustomers").innerHTML="";
+
+    //Feature #3 is below
     let client_responses= Array();
     client_responses=JSON.parse(localStorage.getItem("clients"))?JSON.parse(localStorage.getItem("clients")):[]
     if(client_responses)
@@ -99,7 +105,7 @@ burger.classList.toggle('toggle');
 
 navSlide();
 
-
+//Feature #5 below showing doughnut graph
 
 const doughnut = document.getElementById('myChart');
 const myChart = new Chart(doughnut, {
